@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53af5233-c9e1-4aa1-a729-9347fd452606" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/PostListPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/PostPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/hooks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/hooks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/NewsSlice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/NewsSlice.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/PostsThunk.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/PostsThunk.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/types.d.ts" afterDir="false" />
-    </list>
+    <list default="true" id="53af5233-c9e1-4aa1-a729-9347fd452606" name="Changes" comment="created a logic for postpage also postlistpage with logic. And created a html with mui. (Пока делал фронт столкулся с множественными ошибками. вроде как исправил их, но тут делема. в вебшторме показывает что ошибок нет, но пчму-то не робит код. Тоесть и на ошибку не укажет и в общем как-то так. В целом с бэком особо не было проблем, только не сделал логику добавления коментарий, тк потерял 2&gt;&gt;часа на одном моменте. С фронтом было сложнее. Но я буду брать перервы на 2 месяца т.к понимаю как сильно проседаю из-за редакса поэтому прошу не судить строго :D Хочу самостоятельно поднабрать и вернуться. там буквально 2-3 занятия пропустил и поплава началась. И еще хочу сказать что верстку на муи слизал, но на всех домашках делал сам прям клянусь тут я начал делать фронт уже ккогда было 4-30 я не успевал чисто физически. В общем я старался :((  )" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +57,7 @@
       <workItem from="1712391182755" duration="13300000" />
       <workItem from="1712404750281" duration="99000" />
       <workItem from="1712404852559" duration="148000" />
-      <workItem from="1712405022249" duration="970000" />
+      <workItem from="1712405022249" duration="1668000" />
     </task>
     <task id="LOCAL-00001" summary="Initial api commit.">
       <option name="closed" value="true" />
@@ -150,7 +139,23 @@
       <option name="project" value="LOCAL" />
       <updated>1712403089716</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="created a logic for postpage also postlistpage with logic. And created a html with mui. (Пока делал фронт столкулся с множественными ошибками. вроде как исправил их, но тут делема. в вебшторме показывает что ошибок нет, но пчму-то не робит код. Тоесть и на ошибку не укажет и в общем как-то так. В целом с бэком особо не было проблем, только не сделал логику добавления коментарий, тк потерял 2&gt;&gt;часа на одном моменте. С фронтом было сложнее. Но я буду брать перервы на 2 месяца т.к понимаю как сильно проседаю из-за редакса поэтому прошу не судить строго :D Хочу самостоятельно поднабрать и вернуться. там буквально 2-3 занятия пропустил и поплава началась. И еще хочу сказать что верстку на муи слизал, но на всех домашках делал сам прям клянусь тут я начал делать фронт уже ккогда было 4-30 я не успевал чисто физически. В общем я старался :((  )">
+      <option name="closed" value="true" />
+      <created>1712406683503</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712406683503</updated>
+    </task>
+    <task id="LOCAL-00012" summary="created a logic for postpage also postlistpage with logic. And created a html with mui. (Пока делал фронт столкулся с множественными ошибками. вроде как исправил их, но тут делема. в вебшторме показывает что ошибок нет, но пчму-то не робит код. Тоесть и на ошибку не укажет и в общем как-то так. В целом с бэком особо не было проблем, только не сделал логику добавления коментарий, тк потерял 2&gt;&gt;часа на одном моменте. С фронтом было сложнее. Но я буду брать перервы на 2 месяца т.к понимаю как сильно проседаю из-за редакса поэтому прошу не судить строго :D Хочу самостоятельно поднабрать и вернуться. там буквально 2-3 занятия пропустил и поплава началась. И еще хочу сказать что верстку на муи слизал, но на всех домашках делал сам прям клянусь тут я начал делать фронт уже ккогда было 4-30 я не успевал чисто физически. В общем я старался :((  )">
+      <option name="closed" value="true" />
+      <created>1712406687711</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712406687711</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +170,8 @@
     <MESSAGE value="Created a frontend. Also added an editorconfig and store and hooks for the future." />
     <MESSAGE value="created base setting for store and added theme." />
     <MESSAGE value="created a types just copied from api directory. Created also a slice axiosApi filed store and slice. Also and a thunk where we have a logic of deleting posts and getting posts" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a types just copied from api directory. Created also a slice axiosApi filed store and slice. Also and a thunk where we have a logic of deleting posts and getting posts" />
+    <MESSAGE value="created a logic for postpage also postlistpage with logic. And created a html with mui. (Пока делал фронт столкулся с множественными ошибками. вроде как исправил их, но тут делема. в вебшторме показывает что ошибок нет, но пчму-то не робит код. Тоесть и на ошибку не укажет и в общем как-то так. В целом с бэком особо не было проблем, только не сделал логику добавления коментарий, тк потерял 2&gt;&gt;часа на одном моменте. С фронтом было сложнее. Но я буду брать перервы на 2 месяца т.к понимаю как сильно проседаю из-за редакса поэтому прошу не судить строго :D Хочу самостоятельно поднабрать и вернуться. там буквально 2-3 занятия пропустил и поплава началась. И еще хочу сказать что верстку на муи слизал, но на всех домашках делал сам прям клянусь тут я начал делать фронт уже ккогда было 4-30 я не успевал чисто физически. В общем я старался :((  )" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a logic for postpage also postlistpage with logic. And created a html with mui. (Пока делал фронт столкулся с множественными ошибками. вроде как исправил их, но тут делема. в вебшторме показывает что ошибок нет, но пчму-то не робит код. Тоесть и на ошибку не укажет и в общем как-то так. В целом с бэком особо не было проблем, только не сделал логику добавления коментарий, тк потерял 2&gt;&gt;часа на одном моменте. С фронтом было сложнее. Но я буду брать перервы на 2 месяца т.к понимаю как сильно проседаю из-за редакса поэтому прошу не судить строго :D Хочу самостоятельно поднабрать и вернуться. там буквально 2-3 занятия пропустил и поплава началась. И еще хочу сказать что верстку на муи слизал, но на всех домашках делал сам прям клянусь тут я начал делать фронт уже ккогда было 4-30 я не успевал чисто физически. В общем я старался :((  )" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
