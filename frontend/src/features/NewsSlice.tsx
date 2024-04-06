@@ -1,6 +1,7 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { fetchPosts, deletePost } from './PostsThunk.ts';
-import {News} from '../types'
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
+import { RootState } from '../app/store';
+import { News } from '../types';
 
 interface PostsState {
   loading: boolean;
@@ -13,6 +14,11 @@ const initialState: PostsState = {
   error: null,
   posts: [],
 };
+
+export const fetchPosts = createAsyncThunk('posts/fetchPosts', async () => {
+  const response = await axios.get('/news');
+  return response.data;
+});
 
 const postsSlice = createSlice({
   name: 'posts',
@@ -31,11 +37,10 @@ const postsSlice = createSlice({
       .addCase(fetchPosts.rejected, (state, action) => {
         state.loading = false;
         state.error = action.error.message ?? 'An error occurred';
-      })
-      .addCase(deletePost.fulfilled, (state, action) => {
-        state.posts = state.posts.filter((post) => post.id !== action.payload);
       });
   },
 });
+
+export const selectAllPosts = (state: RootState) => state.posts.posts;
 
 export default postsSlice.reducer;

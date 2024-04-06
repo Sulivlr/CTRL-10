@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53af5233-c9e1-4aa1-a729-9347fd452606" name="Changes" comment="Created a routes for news." />
+    <list default="true" id="53af5233-c9e1-4aa1-a729-9347fd452606" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/PostListPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/PostPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/hooks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/hooks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/NewsSlice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/NewsSlice.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/PostsThunk.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/PostsThunk.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/types.d.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +23,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -26,7 +40,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/suli/CTRL-10&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/suli/CTRL-10/frontend/src&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -36,6 +50,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -46,6 +65,10 @@
       <updated>1712383284844</updated>
       <workItem from="1712383285850" duration="5812000" />
       <workItem from="1712391009762" duration="168000" />
+      <workItem from="1712391182755" duration="13300000" />
+      <workItem from="1712404750281" duration="99000" />
+      <workItem from="1712404852559" duration="148000" />
+      <workItem from="1712405022249" duration="970000" />
     </task>
     <task id="LOCAL-00001" summary="Initial api commit.">
       <option name="closed" value="true" />
@@ -63,15 +86,96 @@
       <option name="project" value="LOCAL" />
       <updated>1712387166358</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial api commit.">
+      <option name="closed" value="true" />
+      <created>1712391449960</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712391449960</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Initial api commit.">
+      <option name="closed" value="true" />
+      <created>1712391622423</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712391622423</updated>
+    </task>
+    <task id="LOCAL-00005" summary="created a routers. (к сожалению потерял 2 часа. т.к в середине перестал работаь код не понимал че происходит, решил заново, и в ходе понял в чем была проблема)">
+      <option name="closed" value="true" />
+      <created>1712392231230</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712392231230</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added types. added filedb and some settings.">
+      <option name="closed" value="true" />
+      <created>1712395461262</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712395461262</updated>
+    </task>
+    <task id="LOCAL-00007" summary="created a db json and also when u doing post it shows datetime content and randomid.">
+      <option name="closed" value="true" />
+      <created>1712397592737</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712397592737</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Created a frontend. Also added an editorconfig and store and hooks for the future.">
+      <option name="closed" value="true" />
+      <created>1712399292532</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712399292532</updated>
+    </task>
+    <task id="LOCAL-00009" summary="created base setting for store and added theme.">
+      <option name="closed" value="true" />
+      <created>1712399704198</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712399704198</updated>
+    </task>
+    <task id="LOCAL-00010" summary="created a types just copied from api directory. Created also a slice axiosApi filed store and slice. Also and a thunk where we have a logic of deleting posts and getting posts">
+      <option name="closed" value="true" />
+      <created>1712403089716</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712403089716</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial api commit." />
     <MESSAGE value="Created a routes for news." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a routes for news." />
+    <MESSAGE value="Initial api commit." />
+    <MESSAGE value="created a routers. (к сожалению потерял 2 часа. т.к в середине перестал работаь код не понимал че происходит, решил заново, и в ходе понял в чем была проблема)" />
+    <MESSAGE value="added types. added filedb and some settings." />
+    <MESSAGE value="created a db json and also when u doing post it shows datetime content and randomid." />
+    <MESSAGE value="Created a frontend. Also added an editorconfig and store and hooks for the future." />
+    <MESSAGE value="created base setting for store and added theme." />
+    <MESSAGE value="created a types just copied from api directory. Created also a slice axiosApi filed store and slice. Also and a thunk where we have a logic of deleting posts and getting posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a types just copied from api directory. Created also a slice axiosApi filed store and slice. Also and a thunk where we have a logic of deleting posts and getting posts" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/api/fileDb.ts</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

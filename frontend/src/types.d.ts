@@ -3,17 +3,14 @@ export interface News {
   content: string;
   datetime: string;
   author: string;
+  title: string;
 }
 
-export interface NewsMutation {
-  news: string;
-  author: string;
-  content: string;
-}
+export type RouteParams = {
+  [key: string]: string | undefined;
+};
 
 export interface Post {
-  id: string;
   title: string;
   content: string;
-  date: string;
 }
