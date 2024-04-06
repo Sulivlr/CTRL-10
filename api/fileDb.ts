@@ -1,7 +1,6 @@
-import {promises as fs} from 'fs'
+import { promises as fs } from 'fs';
 import crypto from 'crypto';
-import {News, NewsMutation} from './types';
-
+import { News, NewsMutation } from './types';
 
 const filename = './db.json';
 let data: News[] = [];
@@ -9,21 +8,25 @@ let data: News[] = [];
 const fileDb = {
   async init() {
     try {
-      const fileContents = await fs.readFile(filename)
+      const fileContents = await fs.readFile(filename);
       data = JSON.parse(fileContents.toString());
     } catch (e) {
       data = [];
     }
   },
   async getNews() {
-    const filteredNews = data.sort((firstDate, secondDate) => Date.parse(secondDate.datetime) - Date.parse(firstDate.datetime));
+    return data.sort((firstDate, secondDate) => Date.parse(secondDate.datetime) - Date.parse(firstDate.datetime));
+  },
+
+  async getNewsById(id: string): Promise<News | undefined> {
+    return data.find(item => item.id === id);
   },
 
   async addNews(item: NewsMutation) {
-      const post: News = {
-        id: crypto.randomUUID().toString(),
-        ...item,
-        datetime: new Date().toISOString(),
+    const post: News = {
+      id: crypto.randomUUID().toString(),
+      ...item,
+      datetime: new Date().toISOString(),
     };
 
     data.push(post);
